@@ -13,20 +13,23 @@
 .header-img {
     width: 100%;
 }
-.header .more-inf {
+.header
+.more-inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
-}
+  .header {
+      text-align: center;
+  }
 }
 .centered-main-page-element {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.task,
+.label-task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -41,7 +44,8 @@
 li, h3 {
     list-style:none;
 }
-.input,.button{
+.input,
+.button{
     outline:none;
 }
 .button {
@@ -130,21 +134,27 @@ input[type="text"]:focus {
 
 /* Completed */
 .task-list
-#completed-tasks label {
+#completed-tasks 
+.task {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-.task-item input[type=text] {
+.task-item 
+.input[type=text] {
     display:none
 }
 
-.task-item.editMode input[type=text] {
+.task-item
+.editMode 
+input[type=text] {
     display:inline-block;
     width:224px
 }
 
-.task-item.editMode label {
+.task-item
+.editMode
+.label-task {
     display:none;
 }
